@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import DisplayMusic from "./Components/DisplayMusic/DisplayMusic";
+import AllMusic from "./Components/DisplayMusic/DisplayMusic"
 
 function App(){
   const[allSongs, seeAllSongs] = useState([]);
@@ -18,13 +18,15 @@ function App(){
   };
   
   return (
+    <div>
     <div className="App">
         <h1>Music Library</h1>
-          <DisplayMusic allSongs={allSongs}/>
+          <AllMusic AllMusic={allSongs}/>
 
+   
+    </div>
     </div>
   );
   
-}
+  }
 export default App;
-

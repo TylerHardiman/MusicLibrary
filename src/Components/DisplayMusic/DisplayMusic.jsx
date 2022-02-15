@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
+
     function AllMusic(){
         const[songLibrary, setSongLibrary] = useState([]);
         
@@ -17,14 +18,14 @@ import axios from "axios";
   
         return (
         <div className = "AllMusic">
-            <h2> Current Library </h2>  {
+            <center><bold><h2> Current Library </h2></bold></center>  {
                 songLibrary.map((id) => ( 
-                <h5><ol ids = { id.id } >
-                    Title: { id.title }, 
+                <ol ids = { id.id } >
+                    <center><h3>Title: { id.title }, 
                     Album: { id.album }, 
-                    Artist: { id.artist } 
-                    Genre: { id.genre }, 
-                    </ol></h5>
+                    Artist: { id.artist }, 
+                    Genre: { id.genre },</h3></center> 
+                    </ol>
                 ))
             }
         </div>

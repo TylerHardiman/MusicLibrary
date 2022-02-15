@@ -20,8 +20,8 @@ function App(){
   return (
     <div>
     <div className="App">
-        <h1>Music Library</h1>
-          <AllMusic AllMusic={allSongs}/>
+        <center><bold><h1>Music Library</h1></bold></center>
+          <AllMusic AllMusic={allSongs}/>;
 
    
     </div>

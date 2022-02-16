@@ -27,9 +27,9 @@ function App(){
   return (
     <div>
     <div className="App">
-        <center><h1>Music Library</h1></center>
-          <center><FinalResult FinalResult={userSearch}/></center>
-          <AllMusic AllMusic={allSongs}/>
+        <ul><center><h1>Music Library</h1></center></ul>
+          <ul><center><FinalResult FinalResult={userSearch}/></center></ul>
+          <center><AllMusic AllMusic={allSongs}/></center>
     </div>
     </div>
   );

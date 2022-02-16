@@ -18,14 +18,14 @@ import axios from "axios";
   
         return (
         <div className = "AllMusic">
-            <center><h2> Current Library </h2></center>  {
+            <ul><center><h2> Current List </h2></center></ul>  {
                 songLibrary.map((id) => ( 
-                <center><h5><ol ids = { id.id } >
-                    Title: { id.title } 
-                    Album: { id.album } 
-                    Artist: { id.artist }
-                    Genre: { id.genre } 
-                    </ol></h5></center>
+                <center><h3><ol ids = { id.id } >
+                    Title: { id.title } <br></br>
+                    Album: { id.album } <br></br>
+                    Artist: { id.artist } <br></br>
+                    Genre: { id.genre } <br></br>
+                    </ol></h3></center>
                 ))
             }
         </div>

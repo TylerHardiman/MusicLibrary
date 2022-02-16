@@ -3,11 +3,11 @@ import ReactDOM from "react-dom";
 import App from "./App";
 
 
-function AllMusic() {
+function DisplayApp() {
   return <App />;
   
 }
 
 
 const rootElement = document.getElementById("root");
-ReactDOM.render(<AllMusic />, rootElement);
+ReactDOM.render(<DisplayApp />, rootElement);
